@@ -29,7 +29,7 @@ namespace TodolistWeb
         {
             services.AddControllers();
 
-            //services.AddSwaggerGen();
+            services.AddSwaggerGen();
 
             services.AddDbContext<TodoContext>(opt =>
                                                opt.UseInMemoryDatabase("TodolistWeb"));
@@ -47,6 +47,8 @@ namespace TodolistWeb
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

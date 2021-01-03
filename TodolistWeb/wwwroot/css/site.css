@@ -1,0 +1,16 @@
+﻿input[type='submit'], button, [aria-label] {
+    cursor: pointer;
+}
+
+#editForm {
+    display: none;
+}
+
+.table-small {
+    table-layout: fixed;
+    width: 50%;
+}
+
+.input-small {
+    width: 50%;
+}
